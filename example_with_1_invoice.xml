@@ -1,0 +1,72 @@
+
+<ExportedData xmlns="http://www.taxservice.am/tp3/invoice/definitions">
+    <SignedData>
+        <Data>
+            <SignableData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Invoice" Version="1.0">
+                <User>user2022h</User>
+                <Type>1</Type>
+                <GeneralInfo>
+                    <InvoiceNumber>
+                        <Number>1234567890</Number>
+                        <Series>A</Series>
+                    </InvoiceNumber>
+                    <SupplyDate>2023-09-13+04:00</SupplyDate>
+                    <Procedure>2</Procedure>
+                    <DealInfo/>
+                    <AdditionalData>Some text</AdditionalData>
+                    <AdjustmentAccount>false</AdjustmentAccount>
+                </GeneralInfo>
+                <SupplierInfo>
+                    <VATNumber>01234567/1</VATNumber>
+                    <Taxpayer>
+                        <TIN>01234567</TIN>
+                        <Name>Coca Cola Inc.</Name>
+                        <Address>World</Address>
+                        <BankAccount>
+                            <BankName>Bank</BankName>
+                            <BankAccountNumber>1234567899999</BankAccountNumber>
+                        </BankAccount>
+                        <AdditionalData>99 AAA 99</AdditionalData>
+                    </Taxpayer>
+                    <SupplyLocation>World 2</SupplyLocation>
+                </SupplierInfo>
+                <BuyerInfo>
+                    <VATNumber>12345678/1</VATNumber>
+                    <Taxpayer>
+                        <TIN>12345678</TIN>
+                        <Name>Customer LLC</Name>
+                        <Address>Country</Address>
+                        <AdditionalData>Some text</AdditionalData>
+                        <TinNotRequired>false</TinNotRequired>
+                    </Taxpayer>
+                    <DeliveryMethod>99 AAA 99</DeliveryMethod>
+                    <DeliveryLocation>Սևանի 21</DeliveryLocation>
+                </BuyerInfo>
+                <GoodsInfo>
+                    <Good>
+                        <Description>Coca Cola 0,5l X12</Description>
+                        <Unit>item</Unit>
+                        <Amount>400.0</Amount>
+                        <PricePerUnit>2000</PricePerUnit>
+                        <Price>800000.0</Price>
+                        <VATRate>20.0</VATRate>
+                        <VAT>160000.0</VAT>
+                        <TotalPrice>960000.0</TotalPrice>
+                    </Good>
+                    <Total>
+                        <Price>800000.0</Price>
+                        <VAT>160000.0</VAT>
+                        <TotalPrice>960000.0</TotalPrice>
+                    </Total>
+                </GoodsInfo>
+            </SignableData>
+        </Data>
+        <Signature>
+            <SignatureType>PKCS7</SignatureType>
+            <SignatureValue>A very long text</SignatureValue>
+        </Signature>
+        <InvoiceMetadata>
+            <SubmissionDate>2023-09-13T12:14:42.441+04:00</SubmissionDate>
+        </InvoiceMetadata>
+    </SignedData>
+</ExportedData>
