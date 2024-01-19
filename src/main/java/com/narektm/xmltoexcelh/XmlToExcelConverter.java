@@ -208,8 +208,8 @@ public class XmlToExcelConverter {
     }
 
     private int extractProductAmountPerPackage(String input) {
-        // Look for 'X' not preceded or followed by alphabetic characters then followed by one or more digits
-        Pattern pattern = Pattern.compile("(?<![a-zA-Z])X(\\d+)(?![a-zA-Z])");
+        // Look for 'X' followed by one or more digits and possibly surrounded by any kind of text
+        Pattern pattern = Pattern.compile("X(\\d+)");
         Matcher matcher = pattern.matcher(input);
         if (matcher.find()) {
             return Integer.parseInt(matcher.group(1));
